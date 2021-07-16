@@ -14,13 +14,14 @@
  - Do not select the significant peptides only!
 It is useful to pre-select peptides based on general QC consideration (e.g. by removing peptides with low or absent signals).
 
-The input data is the [UKA dataset]()
+The input data is the [UKA dataset](https://tercen.com/r/ebd643c3119c715cacdef627bb88a5a7)
 
-This workflow has 3 operators:
+This workflow has 1 operators:
 
-* [identity_operator](https://github.com/tercen/identity_operator)
-* [upstream_kinase_operator](https://github.com/tercen/upstream_kinase_operator)
-* [kinome_render_operator](https://github.com/tercen/kinome_render_operator)
+* [Upstream Kinase Analysis Shiny Operator](https://github.com/tercen/upstream_kinase_analysis_shiny_operator)
+
+This workflow has 1 view:
+* Upstream Kinases Analysis
 
 ##### See Also
 
