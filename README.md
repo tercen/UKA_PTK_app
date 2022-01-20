@@ -2,7 +2,7 @@
 
 ##### Description
 
-`UKA_PTK_app` is an application that allows user to perform an upstream kinase analysis for serine threonine kinases.
+`UKA_app` is an application that allows user to perform an upstream kinase analysis for serine threonine kinases.
 
 ##### Details
 
@@ -25,4 +25,4 @@ This workflow has 1 view:
 
 ##### See Also
 
-[UKA_STK_app](https://github.com/tercen/UKA_STK_app)
+[Upstream Kinase Analysis Shiny Operator](https://github.com/tercen/upstream_kinase_analysis_shiny_operator)
