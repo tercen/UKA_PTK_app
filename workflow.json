@@ -2,9 +2,9 @@
   "kind": "Workflow",
   "id": "33fb64086c3295748ed979a87b5faab2",
   "isDeleted": false,
-  "rev": "18-ff3b5099432ca553d8669edf85805aae",
+  "rev": "139-1b303c1247f5957f4687381d464b7b39",
   "description": "Converts a list of peptides into a list of kinases.",
-  "name": "UKA_app_generic",
+  "name": "UKA_PTK_app",
   "createdBy": "Martin",
   "acl": {
     "kind": "Acl",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2021-10-14T11:57:38.175260Z"
+    "value": "2022-01-24T14:45:56.075539Z"
   },
   "urls": [
     {
@@ -50,33 +50,115 @@
   "links": [
     {
       "kind": "Link",
-      "id": "e8bf3866-f333-4aed-a22d-ce5d43ac56c2",
+      "id": "d81c04aa-2866-4177-9b15-7fb93fc20778",
       "inputId": "dd05a555-f521-4904-b1aa-aed51d6c1aa6-i-0",
-      "outputId": "2d17de25-3d52-4964-8ac4-1f514af62a93-o-0"
+      "outputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-o-0"
     },
     {
       "kind": "Link",
-      "id": "1c1c9c87-fda2-4391-8c4a-9903d2ccb10c",
-      "inputId": "27eed0f0-e5fc-40b2-a7c2-db3a50a2ce0f-i-0",
+      "id": "c7b80644-7c87-43a0-8817-54c76972a04e",
+      "inputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-i-0",
+      "outputId": "b22d817f-77b6-4f8f-b396-d86e4af410c5-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "b721e0f7-9189-4ad4-abba-ef2ec4379edb",
+      "inputId": "b22d817f-77b6-4f8f-b396-d86e4af410c5-i-0",
       "outputId": "0d0969f7-d27d-4bf0-a433-69471e97dd4e-o-0"
-    },
-    {
-      "kind": "Link",
-      "id": "4519f8ab-add8-4278-aff0-27bddabfae06",
-      "inputId": "2d17de25-3d52-4964-8ac4-1f514af62a93-i-0",
-      "outputId": "27eed0f0-e5fc-40b2-a7c2-db3a50a2ce0f-o-0"
     }
   ],
   "steps": [
     {
+      "kind": "ViewStep",
+      "id": "dd05a555-f521-4904-b1aa-aed51d6c1aa6",
+      "groupId": "",
+      "name": "View",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "dd05a555-f521-4904-b1aa-aed51d6c1aa6-i-0",
+          "linkType": "any",
+          "name": "in"
+        }
+      ],
+      "outputs": [],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 88.99000000000001,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 626.4753125000002,
+          "y": 216.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      }
+    },
+    {
+      "kind": "InStep",
+      "id": "0d0969f7-d27d-4bf0-a433-69471e97dd4e",
+      "groupId": "",
+      "name": "Input",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "0d0969f7-d27d-4bf0-a433-69471e97dd4e-i-0",
+          "linkType": "any",
+          "name": "in"
+        }
+      ],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "0d0969f7-d27d-4bf0-a433-69471e97dd4e-o-0",
+          "linkType": "any",
+          "name": "out"
+        }
+      ],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 88.99000000000001,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 625.5050000000001,
+          "y": -79.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      },
+      "groupPortPosition": {
+        "kind": "Point",
+        "x": 0.0,
+        "y": 0.0
+      }
+    },
+    {
       "kind": "DataStep",
-      "id": "2d17de25-3d52-4964-8ac4-1f514af62a93",
+      "id": "2ca378e5-1717-4952-ad2d-caec64d253c8",
       "groupId": "",
       "name": "Upstream Kinase Analysis",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "2d17de25-3d52-4964-8ac4-1f514af62a93-i-0",
+          "id": "2ca378e5-1717-4952-ad2d-caec64d253c8-i-0",
           "linkType": "relation",
           "name": "data"
         }
@@ -84,7 +166,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "2d17de25-3d52-4964-8ac4-1f514af62a93-o-0",
+          "id": "2ca378e5-1717-4952-ad2d-caec64d253c8-o-0",
           "linkType": "relation",
           "name": "data"
         }
@@ -93,13 +175,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 175.3203125,
+          "x": 169.5334014892578,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 579.9419921875001,
-          "y": 131.5
+          "x": 586.4025781250002,
+          "y": 118.5
         }
       },
       "state": {
@@ -132,7 +214,7 @@
                 "factors": [
                   {
                     "kind": "Factor",
-                    "name": "Supergroup",
+                    "name": "Group",
                     "type": "string"
                   }
                 ],
@@ -229,7 +311,7 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 144.0,
+          "cellSize": 54.849999999999994,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -243,7 +325,28 @@
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
+                  "x": 50.0,
+                  "y": 30.0
+                },
+                "topLeft": {
+                  "kind": "Point",
                   "x": 0.0,
+                  "y": 0.0
+                }
+              }
+            },
+            {
+              "kind": "GraphicalFactor",
+              "factor": {
+                "kind": "Factor",
+                "name": "Observation",
+                "type": "string"
+              },
+              "rectangle": {
+                "kind": "Rectangle",
+                "extent": {
+                  "kind": "Point",
+                  "x": 110.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -254,21 +357,22 @@
               }
             }
           ],
-          "rectangleSelections": []
+          "rectangleSelections": [],
+          "nRows": 8
         },
         "filters": {
           "kind": "Filters",
-          "removeNaN": false,
+          "removeNaN": true,
           "namedFilters": []
         },
         "operatorSettings": {
           "kind": "OperatorSettings",
-          "namespace": "ds8",
+          "namespace": "ds1",
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
-            "version": "0.0.2",
-            "operatorId": "33fb64086c3295748ed979a87b5f6467",
+            "version": "0.0.3",
+            "operatorId": "6d20af5cdc113d7de28ff3862d0fdd5b",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
@@ -287,25 +391,36 @@
               "uri": "https://github.com/tercen/upstream_kinase_analysis_shiny_operator"
             }
           },
-          "environment": []
+          "environment": [
+            {
+              "kind": "Pair",
+              "key": "cpu",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "ram",
+              "value": "0"
+            }
+          ]
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 74.0,
+          "cellSize": 45.66666666666667,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "Variable",
+                "name": "ID",
                 "type": "string"
               },
               "rectangle": {
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 80.0,
+                  "x": 102.0,
                   "y": 0.0
                 },
                 "topLeft": {
@@ -316,29 +431,37 @@
               }
             }
           ],
-          "rectangleSelections": []
+          "rectangleSelections": [],
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "49a94adf-4fee-4694-b590-f7a1bbb669f0"
+        "id": "3c55124d-b836-45e1-a4cd-01e7e595901a"
       }
     },
     {
-      "kind": "ViewStep",
-      "id": "dd05a555-f521-4904-b1aa-aed51d6c1aa6",
+      "kind": "WizardStep",
+      "id": "b22d817f-77b6-4f8f-b396-d86e4af410c5",
       "groupId": "",
-      "name": "View",
+      "name": "Wizard",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "dd05a555-f521-4904-b1aa-aed51d6c1aa6-i-0",
-          "linkType": "any",
-          "name": "in"
+          "id": "b22d817f-77b6-4f8f-b396-d86e4af410c5-i-0",
+          "linkType": "relation",
+          "name": "table"
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "b22d817f-77b6-4f8f-b396-d86e4af410c5-o-0",
+          "linkType": "relation",
+          "name": "table"
+        }
+      ],
       "rectangle": {
         "kind": "Rectangle",
         "extent": {
@@ -348,50 +471,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 625.4753125000002,
-          "y": 244.5
-        }
-      },
-      "state": {
-        "kind": "StepState",
-        "taskId": "",
-        "taskState": {
-          "kind": "InitState"
-        }
-      }
-    },
-    {
-      "kind": "WizardStep",
-      "id": "27eed0f0-e5fc-40b2-a7c2-db3a50a2ce0f",
-      "groupId": "",
-      "name": "UKA Wizard",
-      "inputs": [
-        {
-          "kind": "InputPort",
-          "id": "27eed0f0-e5fc-40b2-a7c2-db3a50a2ce0f-i-0",
-          "linkType": "relation",
-          "name": "table"
-        }
-      ],
-      "outputs": [
-        {
-          "kind": "OutputPort",
-          "id": "27eed0f0-e5fc-40b2-a7c2-db3a50a2ce0f-o-0",
-          "linkType": "relation",
-          "name": "table"
-        }
-      ],
-      "rectangle": {
-        "kind": "Rectangle",
-        "extent": {
-          "kind": "Point",
-          "x": 89.392578125,
-          "y": 55.0
-        },
-        "topLeft": {
-          "kind": "Point",
-          "x": 622.5050000000001,
-          "y": 19.5
+          "x": 626.6309106445315,
+          "y": 25.5
         }
       },
       "state": {
@@ -403,9 +484,60 @@
       },
       "model": {
         "kind": "WizardStepModel",
-        "namespace": "ws0",
-        "description": "",
+        "namespace": "UKA",
+        "description": "A app to convert peptides to kinases",
+        "appDesignType": "ukaptk_c06_2group_control_ID",
         "factors": [
+          {
+            "kind": "MappingFactor",
+            "name": "Measurement",
+            "type": "double",
+            "isSingle": true,
+            "description": "Select the values that you wish to use in the computation.\n\nExample:\n* log transform of S100",
+            "factorName": "Quantitation Type",
+            "factors": [],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "ID",
+            "type": "string",
+            "isSingle": false,
+            "description": "Select the peptide identifier.\n\nExample:\n* ID",
+            "factorName": "Peptide",
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "ID",
+                "type": "string"
+              }
+            ],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Group",
+            "type": "string",
+            "isSingle": false,
+            "description": "Select the comparison groups.\n\nExample:\n* Treatment off chip",
+            "factorName": "Treatment",
+            "factors": [],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Observation",
+            "type": "string",
+            "isSingle": false,
+            "description": "Select a single set of data for the analysis.\n\nExample:\n* Barcode and Row\n* Barcode and Array",
+            "factorName": "Individual observation",
+            "factors": [],
+            "isRequired": true
+          }
+        ],
+        "filters": [],
+        "steps": [],
+        "defaultFactors": [
           {
             "kind": "MappingFactor",
             "name": "Measurement",
@@ -413,17 +545,29 @@
             "isSingle": true,
             "description": "",
             "factorName": "Measurement",
-            "factors": [],
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "Measurement",
+                "type": "double"
+              }
+            ],
             "isRequired": true
           },
           {
             "kind": "MappingFactor",
-            "name": "Variable",
+            "name": "ID",
             "type": "string",
             "isSingle": false,
             "description": "",
-            "factorName": "Variable",
-            "factors": [],
+            "factorName": "ID",
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "ID",
+                "type": "string"
+              }
+            ],
             "isRequired": true
           },
           {
@@ -433,77 +577,39 @@
             "isSingle": false,
             "description": "",
             "factorName": "Group",
-            "factors": [],
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "Group",
+                "type": "string"
+              }
+            ],
             "isRequired": true
           },
           {
             "kind": "MappingFactor",
-            "name": "Supergroup",
+            "name": "Observation",
             "type": "string",
             "isSingle": false,
             "description": "",
-            "factorName": "Supergroup",
-            "factors": [],
+            "factorName": "Observation",
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "Observation",
+                "type": "string"
+              }
+            ],
             "isRequired": true
           }
         ],
-        "filters": [],
-        "steps": [],
-        "defaultFactors": [],
         "defaultFilters": []
-      }
-    },
-    {
-      "kind": "InStep",
-      "id": "0d0969f7-d27d-4bf0-a433-69471e97dd4e",
-      "groupId": "",
-      "name": "Input",
-      "inputs": [
-        {
-          "kind": "InputPort",
-          "id": "0d0969f7-d27d-4bf0-a433-69471e97dd4e-i-0",
-          "linkType": "any",
-          "name": "in"
-        }
-      ],
-      "outputs": [
-        {
-          "kind": "OutputPort",
-          "id": "0d0969f7-d27d-4bf0-a433-69471e97dd4e-o-0",
-          "linkType": "any",
-          "name": "out"
-        }
-      ],
-      "rectangle": {
-        "kind": "Rectangle",
-        "extent": {
-          "kind": "Point",
-          "x": 88.99000000000001,
-          "y": 55.0
-        },
-        "topLeft": {
-          "kind": "Point",
-          "x": 621.5050000000001,
-          "y": -88.5
-        }
-      },
-      "state": {
-        "kind": "StepState",
-        "taskId": "",
-        "taskState": {
-          "kind": "InitState"
-        }
-      },
-      "groupPortPosition": {
-        "kind": "Point",
-        "x": 0.0,
-        "y": 0.0
       }
     }
   ],
   "offset": {
     "kind": "Point",
-    "x": 53.0,
-    "y": 153.0
+    "x": -5.0,
+    "y": 272.0
   }
 }
