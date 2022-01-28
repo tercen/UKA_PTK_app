@@ -2,9 +2,9 @@
   "kind": "Workflow",
   "id": "33fb64086c3295748ed979a87b5faab2",
   "isDeleted": false,
-  "rev": "139-1b303c1247f5957f4687381d464b7b39",
+  "rev": "146-485429414889481772b758a9642ada3c",
   "description": "Converts a list of peptides into a list of kinases.",
-  "name": "UKA_PTK_app",
+  "name": "UKA_app",
   "createdBy": "Martin",
   "acl": {
     "kind": "Acl",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-01-24T14:45:56.075539Z"
+    "value": "2022-01-27T08:39:45.359524Z"
   },
   "urls": [
     {
@@ -154,7 +154,7 @@
       "kind": "DataStep",
       "id": "2ca378e5-1717-4952-ad2d-caec64d253c8",
       "groupId": "",
-      "name": "Upstream Kinase Analysis",
+      "name": "UKA analysis",
       "inputs": [
         {
           "kind": "InputPort",
@@ -175,13 +175,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 169.5334014892578,
+          "x": 94.46571350097656,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 586.4025781250002,
-          "y": 118.5
+          "x": 624.4025781250002,
+          "y": 117.5
         }
       },
       "state": {
@@ -358,7 +358,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 8
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -371,8 +371,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
-            "version": "0.0.3",
-            "operatorId": "6d20af5cdc113d7de28ff3862d0fdd5b",
+            "version": "0.0.4",
+            "operatorId": "e01b896d11a4d4031e3270648f3dad49",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
@@ -432,7 +432,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 10
+          "nRows": 1
         },
         "taskId": ""
       },
@@ -471,7 +471,7 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 626.6309106445315,
+          "x": 627.6309106445315,
           "y": 25.5
         }
       },
@@ -486,7 +486,7 @@
         "kind": "WizardStepModel",
         "namespace": "UKA",
         "description": "A app to convert peptides to kinases",
-        "appDesignType": "ukaptk_c06_2group_control_ID",
+        "appDesignType": "uka_c06_2group_control_ID",
         "factors": [
           {
             "kind": "MappingFactor",
