@@ -1,11 +1,11 @@
 {
   "kind": "Workflow",
-  "id": "33fb64086c3295748ed979a87b5faab2",
+  "id": "c845ceade32c4423bc616ff5ab459691",
   "isDeleted": false,
-  "rev": "146-485429414889481772b758a9642ada3c",
+  "rev": "4-e21cb433afd13c3da5e82b509db323fc",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_app",
-  "createdBy": "Martin",
+  "createdBy": "ginberg",
   "acl": {
     "kind": "Acl",
     "owner": "pamgene",
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2021-09-21T13:03:22.017474Z"
+    "value": "2022-02-03T08:53:32.756758Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-01-27T08:39:45.359524Z"
+    "value": "2022-02-03T08:53:33.793101Z"
   },
   "urls": [
     {
@@ -42,10 +42,10 @@
     "kind": "Url",
     "uri": "https://github.com/tercen/UKA_app"
   },
-  "version": "0.0.1",
+  "version": "0.1.2",
   "authors": [],
   "isPublic": false,
-  "projectId": "33fb64086c3295748ed979a87b34b3b7",
+  "projectId": "c845ceade32c4423bc616ff5ab22f158",
   "folderId": "",
   "links": [
     {
@@ -372,7 +372,7 @@
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
             "version": "0.0.4",
-            "operatorId": "e01b896d11a4d4031e3270648f3dad49",
+            "operatorId": "c845ceade32c4423bc616ff5ab458fae",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
@@ -485,7 +485,7 @@
       "model": {
         "kind": "WizardStepModel",
         "namespace": "UKA",
-        "description": "A app to convert peptides to kinases",
+        "description": "Converts a list of peptides into a list of kinases.",
         "appDesignType": "uka_c06_2group_control_ID",
         "factors": [
           {
