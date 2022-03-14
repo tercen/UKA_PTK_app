@@ -371,7 +371,7 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "operatorId": "c845ceade32c4423bc616ff5ab458fae",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
@@ -388,7 +388,7 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/upstream_kinase_analysis_shiny_operator"
+              "uri": "https://github.com/tercen/uka_shiny_operator"
             }
           },
           "environment": [
