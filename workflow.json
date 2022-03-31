@@ -485,7 +485,7 @@
       "model": {
         "kind": "WizardStepModel",
         "namespace": "UKA",
-        "description": "Converts a list of peptides into a list of kinases.",
+        "description": "Find kinase activity changes from differential peptide phosphorylation",
         "appDesignType": "uka_c06_2group_control_ID",
         "factors": [
           {
@@ -493,7 +493,7 @@
             "name": "Measurement",
             "type": "double",
             "isSingle": true,
-            "description": "Select the values that you wish to use in the computation.\n\nExample:\n* log transform of S100",
+            "description": "Select the values to use in the computation.\n\nExample:\n* log transform of S100",
             "factorName": "Quantitation Type",
             "factors": [],
             "isRequired": true
@@ -519,7 +519,7 @@
             "name": "Group",
             "type": "string",
             "isSingle": false,
-            "description": "Select the comparison groups.\n\nExample:\n* Treatment off chip",
+            "description": "Select the grouping factor for the comparison.\n\nExample:\n* Treatment off chip",
             "factorName": "Treatment",
             "factors": [],
             "isRequired": true
@@ -529,7 +529,7 @@
             "name": "Observation",
             "type": "string",
             "isSingle": false,
-            "description": "Select a single set of data for the analysis.\n\nExample:\n* Barcode and Row\n* Barcode and Array",
+            "description": "Select (a) factor(s) that identifies single observations in the analysis.\n\nExample:\n* Cell line\n* Subject \n* Barcode and Array",
             "factorName": "Individual observation",
             "factors": [],
             "isRequired": true
