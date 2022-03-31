@@ -529,7 +529,7 @@
             "name": "Observation",
             "type": "string",
             "isSingle": false,
-            "description": "Select (a) factor(s) that identifies single observations in the analysis.\n\nExample:\n* Cell line\n* Subject \n* Barcode and Array",
+            "description": "Select (a) factor(s) that identify single observations in the analysis.\n\nExample:\n* Cell line\n* Subject \n* Barcode and Array",
             "factorName": "Individual observation",
             "factors": [],
             "isRequired": true
